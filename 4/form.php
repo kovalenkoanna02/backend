@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="block" id="limbs-block">
-                <span class="block-title" <?php if ($errors['limbs']) {
+                <span <?php if ($errors['limbs']) {
                                                 print 'class="error"';
                                             } ?>>Конечности</span>
                 <div class="radios">
@@ -124,7 +124,7 @@
             <div class="block">
                 <textarea placeholder="Расскажите о себе..." name="bio" <?php if ($errors['bio']) {
                                                                             print 'class="error"';
-                                                                        } ?>><?php print $values['bio']; ?></textarea><textarea class="form-control" placeholder="Расскажите о себе..." name="bio"></textarea>
+                                                                        } ?>><?php print $values['bio']; ?></textarea>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="y" id="policy" name="policy" checked />
