@@ -56,10 +56,4 @@ body {
 
 #send-btn {
     width: 100%;
-    background-color: #f54e01;
-    border: 1px solid #f54e01;
-}
-
-#send-btn:active {
-    background-color: #b43a02;
 }
