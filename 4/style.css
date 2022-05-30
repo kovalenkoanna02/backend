@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -74,4 +70,5 @@ body {
     padding: 7px;
     color: red;
     margin: 5px 0px;
+    width: 150px;
 }
