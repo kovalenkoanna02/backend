@@ -19,8 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
         if (!empty($_COOKIE['pass'])) {
             $messages[] = sprintf(
-                'Вы можете <a href="login.php">войти</a> с логином <strong>%s</strong><br/>
-        и паролем <strong>%s</strong> для изменения данных.',
+                '<div>Вы можете <a href="login.php">войти</a> с логином <strong>%s</strong>
+        и паролем <strong>%s</strong> для изменения данных.</div>',
                 strip_tags($_COOKIE['login']),
                 strip_tags($_COOKIE['pass'])
             );
