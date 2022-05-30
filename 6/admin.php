@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->execute(array($_POST['delete']));
 
             $powers = $db->prepare("DELETE FROM superclients where client_id = ?");
-            $powers->execute(array($_COOKIE['client_id']));
+            $powers->execute(array($result['id']));
             header('Location: ?delete_error=0');
         }
     } else if (!empty($_POST['edit'])) {
@@ -137,6 +137,11 @@ if (!empty($_SERVER['PHP_AUTH_USER']) && !empty($_SERVER['PHP_AUTH_PW'])) {
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
     <title>Admin</title>
+    <style>
+        body {
+            flex-direction: column !important;
+        }
+    </style>
 </head>
 
 <body>
