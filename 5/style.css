@@ -41,12 +41,6 @@ body {
 
 .radios {
     display: flex;
-    justify-content: space-around;
-}
-
-.limbs-radio {
-    display: flex;
-    justify-content: space-around;
 }
 
 .radios input {
