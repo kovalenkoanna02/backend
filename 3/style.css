@@ -36,8 +36,8 @@ body {
 
 .block input:focus, .block textarea:focus, .block select:focus {
     outline: none;
-    border: 1px solid #f54e01;
-    box-shadow: 0px 5px 20px #b43a028a;
+    border: 1px solid #abf06a;
+    box-shadow: 0px 5px 20px #abf06a9b;
 }
 
 .radios {
